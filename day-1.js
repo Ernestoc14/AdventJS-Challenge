@@ -17,14 +17,14 @@ function findFirstRepeated(gifts) {
   for (let i = 0; i < gifts.length; i++) {
     if (test.indexOf(gifts[i]) > -1) {
       lowest = lowest || i;
-      console.log(i, lowest)
+      console.log("Esto es i=",i +"Esto es Lowest=", lowest)
       if (i < lowest) {
         lowest = i;
-        console.log(i, lowest)
+        console.log("Esto es i=",i +"Esto es Lowest=", lowest)
       }
     } else {
       test.push(gifts[i]);
-      console.log(i)
+      console.log("Esto es i=",i)
     }
   }
 
@@ -32,4 +32,4 @@ function findFirstRepeated(gifts) {
 }
 
 gifts = [2, 1, 3, 5, 3, 2];
-// console.log(findFirstRepeated(gifts));
+console.log(findFirstRepeated(gifts));
